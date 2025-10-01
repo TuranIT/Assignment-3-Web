@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Assignment 3 — Advanced CSS (Flexbox & Grid)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><img src="https://picsum.photos/100" alt="My Logo"></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#grid-layout">Grid Layout</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cards Section -->
+    <section id="cards" class="cards-section container">
+      <h2>Card Row (Flexbox)</h2>
+      <p class="muted">Three equal-height cards laid out with Flexbox.</p>
+      <div class="card-row">
+        <article class="card">
+          <img src="https://picsum.photos/400/250?random=1" alt="Card 1">
+          <div class="card-body">
+            <h3>Card Title One</h3>
+            <p>Short description text about the card. Explains the purpose and content briefly.</p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/400/250?random=2" alt="Card 2">
+          <div class="card-body">
+            <h3>Card Title Two</h3>
+            <p>Short description text about the card. Explains the purpose and content briefly.</p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/400/250?random=3" alt="Card 3">
+          <div class="card-body">
+            <h3>Card Title Three</h3>
+            <p>Short description text about the card. Explains the purpose and content briefly.</p>
+            <a class="btn" href="#">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Grid Layout -->
+    <section id="grid-layout" class="grid-page container">
+      <h2>Page Layout with Grid Areas</h2>
+      <div class="layout-grid">
+        <header class="grid-header">Header Area</header>
+        <aside class="grid-sidebar">Sidebar — Navigation or widgets</aside>
+        <article class="grid-main">
+          <h3>Main Content</h3>
+          <p>This area demonstrates CSS Grid areas. Resize the window to see responsive behavior.</p>
+        </article>
+        <footer class="grid-footer">Footer Area</footer>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-section container">
+      <h2>Image Gallery (Grid)</h2>
+      <p class="muted">Nine images arranged in a clean, responsive grid. Hover to see captions.</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=4" alt=""><figcaption>Astana</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=5" alt=""><figcaption>Almaty</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=6" alt=""><figcaption>Shymkent</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=7" alt=""><figcaption>Karaganda</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=8" alt=""><figcaption>Aktobe</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=9" alt=""><figcaption>Taraz</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=10" alt=""><figcaption>Pavlodar</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=11" alt=""><figcaption>Taldykorgan</figcaption></figure>
+        <figure class="gallery-item"><img src="https://picsum.photos/300/200?random=12" alt=""><figcaption>Petropavl</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio-section container">
+      <h2>Portfolio Page — Flexbox + Grid</h2>
+      <div class="portfolio-grid">
+        <main class="projects-area">
+          <h3>Projects</h3>
+          <div class="projects-list">
+            <article class="project-card">
+              <div class="project-thumb"><img src="https://picsum.photos/400/250?random=13" alt=""></div>
+              <div class="project-body">
+                <h4>Project Alpha</h4>
+                <p>Short description of the project with key facts and technologies used.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="#">View</a>
+                  <a class="btn ghost small" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb"><img src="https://picsum.photos/400/250?random=14" alt=""></div>
+              <div class="project-body">
+                <h4>Project Beta</h4>
+                <p>Short description of the project with key facts and technologies used.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="#">View</a>
+                  <a class="btn ghost small" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-thumb"><img src="https://picsum.photos/400/250?random=15" alt=""></div>
+              <div class="project-body">
+                <h4>Project Gamma</h4>
+                <p>Short description of the project with key facts and technologies used.</p>
+                <div class="project-actions">
+                  <a class="btn small" href="#">View</a>
+                  <a class="btn ghost small" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </main>
+
+        <aside class="portfolio-sidebar">
+          <h3>About / Info</h3>
+          <p>Sidebar content: brief bio, contact, skills, or filters.</p>
+          <ul class="skill-list">
+            <li>HTML</li><li>CSS (Grid & Flexbox)</li><li>Responsive Design</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Sayed Nasibullah Turan — Group 2401</p>
+    </div>
+  </footer>
+
+</body>
+</html>
